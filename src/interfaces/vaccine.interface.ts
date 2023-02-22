@@ -1,3 +1,3 @@
-export interface Vaccine {
+export interface IVaccine {
   name: string;
 }

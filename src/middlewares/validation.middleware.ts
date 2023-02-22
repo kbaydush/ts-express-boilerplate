@@ -22,9 +22,9 @@ export const validationMiddleware = (
     validate(obj, { skipMissingProperties, whitelist, forbidNonWhitelisted }).then((errors: ValidationError[]) => {
       if (errors.length > 0) {
         const message = errors.map(getAllNestedErrors).join(', ');
-        next(new HttpException(400, message));
+        return next(new HttpException(400, message));
       } else {
-        next();
+        return next();
       }
     });
   };

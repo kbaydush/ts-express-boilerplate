@@ -1,6 +1,6 @@
-import { Vaccine } from '@interfaces/vaccine.interface';
+import { IVaccine } from '@interfaces/vaccine.interface';
 
 // password: password
-const vaccineModel: Vaccine[] = [{ name: 'Vaccine 1' }];
+const vaccineModel: IVaccine[] = [{ name: 'Vaccine 1' }];
 
 export default vaccineModel;
